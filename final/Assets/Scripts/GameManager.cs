@@ -12,12 +12,18 @@ public class GameManager : MonoBehaviour
         isnow = true;
         nowPlayerRender.enabled = true;
         futurePlayerRender.enabled = false;
+        
     }
 
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        Invoke("Teleport", 1.0f);
+    }
+
+    void Teleport()
+    {
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             if (isnow == true)
             {
@@ -33,4 +39,5 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
 }
