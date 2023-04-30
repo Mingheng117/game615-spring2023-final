@@ -1,17 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class checkPoint : MonoBehaviour
+public class disablePlayer : MonoBehaviour
 {
-    private DeadZone respawn;
+    public GameObject nowplayer;
+    public GameObject futureplayer;
     private BoxCollider checkPointcollider;
 
     void Awake()
     {
         checkPointcollider = GetComponent<BoxCollider>();
-        respawn = GameObject.FindGameObjectWithTag("DeadZone").GetComponent<DeadZone>();
     }
     // Start is called before the first frame update
     void Start()
@@ -24,13 +23,16 @@ public class checkPoint : MonoBehaviour
     {
         
     }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            respawn.nowCheckPoint = this.gameObject;
+            nowplayer.GetComponent<playerController>().enabled = false;
+            //Debug.Log("yes1");
+            futureplayer.GetComponent<playerController>().enabled = false;
+            //Debug.Log("yes2");
             checkPointcollider.enabled = false;
+            //Debug.Log("yes3");
         }
     }
 }

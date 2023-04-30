@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class DeadZone : MonoBehaviour
 {
-    public GameObject player;
-    public GameObject CheckPoint;
+    public GameObject nowPlayer;
+    public GameObject futurePlayer;
+    public GameObject nowCheckPoint;
+    public GameObject futureCheckPoint;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,11 +20,12 @@ public class DeadZone : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player")) 
         {
-            player.transform.position = CheckPoint.transform.position;
+            nowPlayer.transform.position = nowCheckPoint.transform.position;
+            futurePlayer.transform.position = futureCheckPoint.transform.position;
         }
     }
 }

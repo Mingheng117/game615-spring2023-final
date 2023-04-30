@@ -11,7 +11,9 @@ public class playerController : MonoBehaviour
     public Animator Runanim;
     public Animator Jumpanim;
     public GameObject bombs;
+    public GameObject bombs2;
     public GameObject bombsSpawnPoint;
+    public GameObject bombsSpawnPoint2;
 
 
     //public animator Idleanim;
@@ -64,6 +66,7 @@ public class playerController : MonoBehaviour
         if (other.gameObject.CompareTag("BombRespawn"))
         {
             GameObject bomb = Instantiate(bombs, bombsSpawnPoint.transform.position, Quaternion.identity);
+            GameObject bomb2 = Instantiate(bombs2, bombsSpawnPoint2.transform.position, Quaternion.identity);
         }
     }
 

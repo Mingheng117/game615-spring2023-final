@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3180236536769404902}
   - component: {fileID: 3180236536769404898}
   m_Layer: 0
-  m_Name: Bomb
+  m_Name: BombPlot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -297,7 +297,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3180236537109203268}
   - component: {fileID: 3180236537109203267}
-  - component: {fileID: 3180236537109203266}
+  - component: {fileID: 5768332585811447005}
   m_Layer: 0
   m_Name: killZone
   m_TagString: Untagged
@@ -333,7 +333,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3180236537109203266
+--- !u!114 &5768332585811447005
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -342,8 +342,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 3180236537109203269}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de851cfa2038e8e4592e84dc79cdf871, type: 3}
+  m_Script: {fileID: 11500000, guid: e28e61556565be841b319dffaf63ca67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 3482796066255120810, guid: 824de9eca5fe44842905d0d2e1fbdf9d, type: 3}
-  respawn: {fileID: 1110661878055457969, guid: c641de8c69416184fa17d74bf1c49c91, type: 3}

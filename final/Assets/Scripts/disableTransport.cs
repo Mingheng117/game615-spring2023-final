@@ -2,13 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class portal : MonoBehaviour
+public class disableTransport : MonoBehaviour
 {
-    public GameObject player;
-    public GameObject futureplayer;
-    public GameObject CheckPoint;
-    public GameObject FCheckPoint;
-
+    public GameObject nowplayer;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,12 +16,14 @@ public class portal : MonoBehaviour
     {
         
     }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            player.transform.position = CheckPoint.transform.position;
-            futureplayer.transform.position = FCheckPoint.transform.position;
+            GameObject disTransport = GameObject.Find("GameManager");
+            GameManager disT = disTransport.GetComponent<GameManager>();
+            disT.transport = false;
         }
     }
 }

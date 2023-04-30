@@ -7,15 +7,16 @@ using static UnityEngine.ParticleSystem;
 
 public class bomb : MonoBehaviour
 {
-    float countDown = 6;
+    float countDown = 10;
     public TMP_Text text;
     //public ParticleSystem boomParticle;
     public GameObject killZone;
 
+
     // Start is called before the first frame update
     void Start()
     {
-        //boomParticle.Stop();
+        
     }
 
     // Update is called once per frame

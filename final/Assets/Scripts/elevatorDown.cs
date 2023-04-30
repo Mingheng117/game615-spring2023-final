@@ -5,7 +5,9 @@ using UnityEngine;
 public class elevatorDown : MonoBehaviour
 {
     public GameObject player;
-    public Animator goDown;
+    //public GameObject elevatorF;
+    public Animator goDown1;
+    public Animator goDown2;
     public bool isDown;
     // Start is called before the first frame update
     void Start()
@@ -22,7 +24,9 @@ public class elevatorDown : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            goDown.SetBool("isDown", true);
+            goDown1.SetBool("isDown", true);
+            goDown2.SetBool("isDown", true);
+            //elevatorF.SetActive(true);
         }
     }
 }
