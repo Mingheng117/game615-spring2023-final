@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class enablePlayer : MonoBehaviour
 {
-    public GameObject nowplayer;
-    public GameObject futureplayer;
+    //public GameObject nowplayer;
+    //public GameObject futureplayer;
+    public GameObject elevatorWall;
     private BoxCollider checkPointcollider;
 
     void Awake()
@@ -27,11 +28,12 @@ public class enablePlayer : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            nowplayer.GetComponent<playerController>().enabled = true;
+            elevatorWall.SetActive(false);
+            //nowplayer.GetComponent<playerController>().enabled = true;
             //Debug.Log("no1");
-            futureplayer.GetComponent<playerController>().enabled = true;
+            //futureplayer.GetComponent<playerController>().enabled = true;
             //Debug.Log("no2");
-            checkPointcollider.enabled = false;
+            //checkPointcollider.enabled = false;
             //Debug.Log("no3");
         }
     }

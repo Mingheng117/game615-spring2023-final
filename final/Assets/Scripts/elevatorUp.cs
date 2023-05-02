@@ -6,6 +6,7 @@ public class elevatorUp : MonoBehaviour
 {
 
     public GameObject player;
+    public GameObject elevatorWall;
     public Animator goUp;
     public bool isUp = false;
     // Start is called before the first frame update
@@ -25,6 +26,7 @@ public class elevatorUp : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             goUp.SetBool("isUp", true);
+            elevatorWall.SetActive(true);
         }
     }
 }

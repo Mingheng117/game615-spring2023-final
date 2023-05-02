@@ -5,7 +5,7 @@ using UnityEngine;
 public class elevatorDown : MonoBehaviour
 {
     public GameObject player;
-    //public GameObject elevatorF;
+    public GameObject elevatorWall;
     public Animator goDown1;
     public Animator goDown2;
     public bool isDown;
@@ -26,7 +26,7 @@ public class elevatorDown : MonoBehaviour
         {
             goDown1.SetBool("isDown", true);
             goDown2.SetBool("isDown", true);
-            //elevatorF.SetActive(true);
+            elevatorWall.SetActive(true);
         }
     }
 }

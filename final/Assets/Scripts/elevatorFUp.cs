@@ -5,6 +5,7 @@ using UnityEngine;
 public class elevatorFUp : MonoBehaviour
 {
     public GameObject player;
+    public GameObject elevatorWall;
     GameObject nowplayer;
     public Animator goUp;
     public GameObject checkpoint;
@@ -26,6 +27,7 @@ public class elevatorFUp : MonoBehaviour
         {
             goUp.SetBool("isUp", true);
             nowplayer.transform.position = checkpoint.transform.position;
+            elevatorWall.SetActive(true);
 
         }
     }
