@@ -1,6 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Threading;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -55,4 +59,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void StartButtonClicked()
+    {
+        SceneManager.LoadScene("Intro");
+    }
+
+    public void EndButtonClicked()
+    {
+        Application.Quit();
+    }
 }

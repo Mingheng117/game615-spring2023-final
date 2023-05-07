@@ -9,7 +9,7 @@ public class bomb : MonoBehaviour
 {
     float countDown = 10;
     public TMP_Text text;
-    //public ParticleSystem boomParticle;
+    public GameObject boomParticle;
     public GameObject killZone;
 
 
@@ -31,7 +31,7 @@ public class bomb : MonoBehaviour
         if (countDown < 1)
         {
             killZone.SetActive(true);
-            //boomParticle.Play();
+            boomParticle.SetActive(true);
             Destroy(gameObject, 1.0f);
         }
     }

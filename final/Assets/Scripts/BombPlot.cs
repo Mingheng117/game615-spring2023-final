@@ -1,18 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BombPlot : MonoBehaviour
 {
-    GameObject player;
-    GameObject futureplayer;
-    
+    public string targetScene;
 
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.Find("Player");
-        futureplayer = GameObject.Find("FuturePlayer");
         
         //GameObject gm = GameObject.Find("GameMagager");
         //GameManager isnow = gm.GetComponent<GameManager>();
@@ -30,8 +27,7 @@ public class BombPlot : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Destroy(player);
-            Destroy(futureplayer);
+            SceneManager.LoadScene(targetScene);
         }
     }
 }
