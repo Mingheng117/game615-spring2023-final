@@ -331,7 +331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.6862745}
+  m_Color: {r: 0.39999998, g: 0.8023445, b: 1, a: 0.6862745}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -370,9 +370,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1658214878}
   lines:
-  - 'Science Girl: Come join our experienment!'
+  - 'Science Girl: Come join our experienment! We offer free food!'
+  - 'Protagnist: Wow really? I''ve been starving for days!'
+  - 'Science Girl: Well just come right in my boy!'
   - 'Protagnist: Ok'
-  textSpeed: 0.1
+  textSpeed: 0.02
 --- !u!1 &358319177
 GameObject:
   m_ObjectHideFlags: 0
@@ -905,7 +907,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Game Name here
+  m_text: ChronoSynapse
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 77097b78451a52a469181f7633489545, type: 2}
   m_sharedMaterial: {fileID: -3597706784546387687, guid: 77097b78451a52a469181f7633489545, type: 2}
