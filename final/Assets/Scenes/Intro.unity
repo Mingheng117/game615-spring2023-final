@@ -271,7 +271,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 224540924}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 60.31, y: 1, z: 17.51}
+  m_LocalPosition: {x: 60.31, y: 1, z: 18.83}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -331,7 +331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.53207546, g: 0.84896237, b: 1, a: 0.6862745}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6862745}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -370,12 +370,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1658214878}
   lines:
-  - 'Science Girl: Come join our experienment! We offer free food to anyone who is
-    brave enough to join!'
-  - 'Protagnist: Free food?'
-  - 'Science Girl: Yes my boy, just walk pass that gate hehe.'
-  - 'Protagnist: Alright! Sign me up!'
-  textSpeed: 0.02
+  - 'Science Girl: Come join our experienment!'
+  - 'Protagnist: Ok'
+  textSpeed: 0.1
 --- !u!1 &358319177
 GameObject:
   m_ObjectHideFlags: 0
@@ -908,7 +905,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ChronoSynapse
+  m_text: Game Name here
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 77097b78451a52a469181f7633489545, type: 2}
   m_sharedMaterial: {fileID: -3597706784546387687, guid: 77097b78451a52a469181f7633489545, type: 2}
