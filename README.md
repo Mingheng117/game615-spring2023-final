@@ -1,17 +1,17 @@
-# game615-spring2023-08
+# game615-spring2023
 
-**TEAM:** Yihua Pu & Mingheng Li
+**Final:** _"Chrono Synapse"_
 
- **How to play:** 
-- W/A/S/D to move the character
+**Group team:** Yihua Pu & Mingheng Li
+
+**How to play:** 
+- W/D to move the character
 - Space to jump
 - Q to teleport
- 
+
+**Game goal:**
+Experience the journey and pass level 1.
+
 [**Playable link to game**](https://Mingheng117.github.io/game615-spring2023-final/final/play/) 
 
 [**Link to source (GitHub page)**](https://github.com/Mingheng117/game615-spring2023-final/tree/main/final) 
- 
- 
- **CREDITS:**
-
-Bomb by Quaternius [CC-BY] via Poly Pizza
