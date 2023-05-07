@@ -7,7 +7,7 @@
 - Space to jump
 - Q to teleport
  
-[**Playable link to game**](ttps://Mingheng117.github.io/game615-spring2023-07/exersice07/play/) 
+[**Playable link to game**](https://Mingheng117.github.io/game615-spring2023-07/exersice07/play/) 
 
 [**Link to source (GitHub page)**](https://github.com/Mingheng117/game615-spring2023-final/tree/main/final) 
  
